@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <center>
+    <h3>Welcome</h3>
+  </center>
+
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <center>
+      <!-- <section> -->
+        <!-- <h4>WEIGHT CALCULATOR</h4>
+    Age:<input type = "text" placeholder="Enter your Age" id="userinput">
+    <input  type = "submit" onclick="Age();"><br>
+    <h5 id ="appear"></h5>
+    <p id = "displayage"></p> -->
+
+    <!-- <script>
+
+      function Age(){
+        document.getElementById("appear").innerHTML = "You're weight is:";
+        var age = document.getElementById("userinput").value;
+        if(age < 1)
+        {
+          var weight = ((age/12)+9)/2;
+          document.getElementById("displayage").innerHTML=weight;
+        } -->
+        <!-- else if(age<=5){
+          var weight1 = 2 * (age +5 ); -->
+          <!-- document.getElementById("displayage").innerHTML=weight1;
+        }
+        else if(age<=14) {
+          var weight2 = 4 * age;
+          document.getElementById("displayage").innerHTML=weight2;
+
+        }
+        else if(age>14)
+        {
+          var weight = (age + 4) *2;
+            document.getElementById("displayage").innerHTML=weight;
+        }
+      }
+      </script>
+      </section> -->
+      <section>
+        <h4>BMI CALCULATOR</h4>
+        Weight:<input type = "text" placeholder="Enter your Weight in kg" id="weightinput"/>
+        <br></br>
+        Height:<input type = "text" placeholder="Enter your Height in cms" id="heightinput"/>
+        <input  type = "submit" onclick="bmi()"/><br>
+     <!-- <input type ="checkbox" id = "Check1" name="male" value="male" onclick ="selectOnlyThis(this.id)"/><label for ="male">Male</label><br> -->
+    <!-- <input type = "checkbox" id ="Check2" name="female" value = "female" onclick = "selectOnlyThis(this.id)"/><label for="female">Female</label><br> -->
+        <p id ="bm2"></p>
+        <p id ="bm"></p>
+
+        </section>
+    </center>
+
+  </div>
+  <script>
+    function bmi(){
+      document.getElementById("bm2").innerHTML="BMI VALUE :";
+      var height = document.getElementById("heightinput").value;
+      var weight = document.getElementById("weightinput").value;
+      var height_in_msq= (height*10000);
+      var bmi = (weight/height_in_msq);
+      document.getElementById("bm").innerHTML=bmi;
+
+    }
+    function selectOnlyThis(id) {
+    for (var i = 1;i <= 2; i++)
+    {
+        document.getElementById("Check" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+  }
+
+  </script>
+<div>
+  <center>
+
+    <!-- <p id = "displayage"></p> -->
+  </center>
+  </div>
+</body>
+</html>
